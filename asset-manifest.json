@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Q-A-web-app/static/css/main.1204c169.css",
+    "main.js": "/Q-A-web-app/static/js/main.71e113f8.js",
+    "index.html": "/Q-A-web-app/index.html",
+    "main.1204c169.css.map": "/Q-A-web-app/static/css/main.1204c169.css.map",
+    "main.71e113f8.js.map": "/Q-A-web-app/static/js/main.71e113f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1204c169.css",
+    "static/js/main.71e113f8.js"
+  ]
+}
