@@ -14,26 +14,6 @@ export default class QuestionBox extends React.Component {
             currentQuestionIndex: 0
         };
         this.handleChange = this.handleChange.bind(this);
-        this.prevShowOrHide = this.prevShowOrHide.bind(this);
-        this.nextShowOrHide = this.nextShowOrHide.bind(this);
-    }
-
-    prevShowOrHide() {
-        let { currentQuestionIndex } = this.state;
-        if (currentQuestionIndex === 0) {
-            return false
-        } else {
-            return true
-        }
-    }
-
-    nextShowOrHide() {
-        let { currentQuestionIndex } = this.state;
-        if (currentQuestionIndex === 5) {
-            return false
-        } else {
-            return true
-        }
     }
 
     handleChange(key, change) {
@@ -76,7 +56,7 @@ export default class QuestionBox extends React.Component {
 
                     <div className='container-buttons'>
                         <div>
-                            {this.prevShowOrHide() &&
+                            {this.state.currentQuestionIndex > 0 &&
                                 <TiArrowBack style={{
                                     height: '35px',
                                     width: '35px',
@@ -87,7 +67,7 @@ export default class QuestionBox extends React.Component {
                             }
                         </div>
                         <div>
-                            {this.nextShowOrHide() &&
+                            {this.state.currentQuestionIndex < 5 &&
                                 <TiArrowForward style={{
                                     height: '35px',
                                     width: '35px',
@@ -110,8 +90,12 @@ export default class QuestionBox extends React.Component {
                                 {
                                     (questions[num].answers || []).map((a, aIndex) => {
                                         return <div className='current-option1-container'>
-                                            <input type="radio" className='radiobtn1' name={questions[num].key}
-                                                value={a.option} checked={a.option === answers[num]}
+                                            <input
+                                                type="radio"
+                                                className='radiobtn1'
+                                                name={questions[num].key}
+                                                value={a.option}
+                                                checked={a.option === answers[num]}
                                                 onChange={() => this.handleChange("answers", a.option, aIndex)} />
                                             <div className='current-options'>{a.option}</div>
                                         </div>
