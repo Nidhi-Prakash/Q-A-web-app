@@ -1,0 +1,35 @@
+.reviewBox-container {
+    border: 2px solid black;
+    width: 80%;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    background-color: #FAD6A5;
+    border-radius: 10px;
+
+
+    .headin-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .heading {
+            color: green;
+            text-decoration: underline;
+        }
+    }
+
+    .list-wrapper {
+        display: flex;
+        justify-content: center;
+
+        .list-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 55px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+}
