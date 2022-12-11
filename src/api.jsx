@@ -23,7 +23,8 @@ const Questions = [
                 option: 7,
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: 7
     },
     {
         key: 2,
@@ -49,7 +50,8 @@ const Questions = [
                 option: 6,
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: 4
     },
     {
         key: 3,
@@ -75,7 +77,8 @@ const Questions = [
                 option: 'M.S.Dhoni',
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: 'Virat Kohli'
     },
     {
         key: 4,
@@ -101,7 +104,8 @@ const Questions = [
                 option: 'Raja Ram Mohan Rai',
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: 'Mahatama Gandhi'
     },
     {
         key: 5,
@@ -127,7 +131,8 @@ const Questions = [
                 option: 'None of the above',
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: 'Spidey Sense'
     },
     {
         key: 6,
@@ -153,7 +158,8 @@ const Questions = [
                 option: '95%',
                 selected: false,
             }
-        ]
+        ],
+        correctAnswer: '70%'
     },
 ]
 

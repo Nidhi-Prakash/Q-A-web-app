@@ -1,0 +1,44 @@
+.finalBox-wrapper {
+    border: 2px solid black;
+    margin: 54px auto;
+    height: 600px;
+    width: 80%;
+    background-color: beige;
+    border-radius: 20px;
+    box-shadow: 0px 1px 5px 0 black;
+
+    .finalBox-container {
+        border: 2px solid white;
+        margin: 72px auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 55px;
+        height: 440px;
+        background-color: palevioletred;
+        border-radius: 20px;
+
+
+        .container-items{
+            font-size: 1.6rem;
+            background-color: beige;
+            border-radius: 10px;
+            width: 50%;
+            text-align: center;
+            border: 0.5px solid black;
+        }
+
+        .Start-again-btn{
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            background-color: rgb(71, 146, 71);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            
+        }
+    }
+}
